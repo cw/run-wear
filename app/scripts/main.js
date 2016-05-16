@@ -58,4 +58,6 @@
       closeMenu();
     }
   });
+  // should this happen in an event handler?
+  getLocation();
 })();
