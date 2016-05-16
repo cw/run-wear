@@ -35,6 +35,21 @@
     appbarElement.classList.toggle('open');
     navdrawerContainer.classList.toggle('open');
   }
+  
+  function logLatLon(lat, lon) {
+    console.log("Lat:" + lat + " Lon:" + lon);
+  }
+  
+  function getLocation() {
+    if ("geolocation" in navigator) {
+      /* geolocation is available */
+      navigator.geolocation.getCurrentPosition(function(position) {
+        logLatLon(position.coords.latitude, position.coords.longitude);
+      });
+    } else {
+      /* geolocation IS NOT available */
+    }
+  }
 
   main.addEventListener('click', closeMenu);
   menuBtn.addEventListener('click', toggleMenu);
