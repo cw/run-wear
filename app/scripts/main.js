@@ -37,6 +37,7 @@
   }
   
   function logLatLon(lat, lon) {
+    // get ZIP http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=false
     console.log("Lat:" + lat + " Lon:" + lon);
   }
   
