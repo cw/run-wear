@@ -53,6 +53,7 @@
         if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
            if(xmlhttp.status == 200){
                //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+               console.log(xmlhttp.responseText);
            }
            else if(xmlhttp.status == 400) {
               alert('There was an error 400')
@@ -66,7 +67,7 @@
     xmlhttp.open("GET", "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + lon + "&sensor=false", true);
     xmlhttp.send();
     
-    console.log(xmlhttp.responseText);
+    
     //console.log("Lat:" + lat + " Lon:" + lon);
   }
   
