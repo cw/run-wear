@@ -63,7 +63,7 @@
         }
     };
 
-    xmlhttp.open("GET", "http://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + lng + "&sensor=false", true);
+    xmlhttp.open("GET", "http://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + lon + "&sensor=false", true);
     xmlhttp.send();
     
     console.log(xmlhttp.responseText);
